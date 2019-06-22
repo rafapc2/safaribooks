@@ -51,10 +51,14 @@ for more info just type:
 $ python3 safaribooks.py --help
 ```
 
-## Docker Container
+## Docker Container:
+
+Make your own container
 ```shell
 $ docker build -t mysafaribooks .
 ```
+
+Execute and enjoy :)
 
 ```shell
 $docker run --rm -itv "$(pwd):/data/Books" mysafaribooks --cred "user@xxxmail.com:password" XXXXXXXXXXXXX
