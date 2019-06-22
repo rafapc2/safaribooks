@@ -8,7 +8,8 @@ Before any usage please read the *O'Reilly*'s [Terms of Service](https://learnin
 ## Overview:
   * [Requirements & Setup](#requirements--setup)
   * [Usage](#usage)
-
+  * [Docker Container](#Docker--Container)
+  
 ## Requirements & Setup:
 ```shell
 $ git clone https://github.com/rafapc2/safaribooks.git
@@ -50,5 +51,11 @@ for more info just type:
 $ python3 safaribooks.py --help
 ```
 
-  
+## Docker Container
+```shell
+$ docker build -t mysafaribooks .
+```
 
+```shell
+$docker run --rm -itv "$(pwd):/data/Books" mysafaribooks --cred "user@xxxmail.com:password" XXXXXXXXXXXXX
+```
