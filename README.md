@@ -8,8 +8,6 @@ Before any usage please read the *O'Reilly*'s [Terms of Service](https://learnin
 ## Overview:
   * [Requirements & Setup](#requirements--setup)
   * [Usage](#usage)
-  * [Example: Download *Test-Driven Development with Python, 2nd Edition*](#download-test-driven-development-with-python-2nd-edition)
-  * [Example: Use or not the `--no-kindle` option](#use-or-not-the---no-kindle-option)
 
 ## Requirements & Setup:
 ```shell
@@ -29,6 +27,10 @@ The program depends of only two **Python 3** modules:
 lxml>=4.1.1
 requests>=2.20.0
 ```
+
+The file **cookies.json** is needed for mantain the http session in Safari, if login fail, you must follow the following steps:
+**TODO :(**
+
   
 ## Usage:
 It's really simple to use, just choose a book from the library and replace in the following command:
