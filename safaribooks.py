@@ -418,7 +418,7 @@ class SafariBooks:
 
         if update_referer:
             # TODO Update Referer HTTP Header
-            # TODO How about Origin? 
+            # TODO How about Origin?
             self.HEADERS["referer"] = response.request.url
 
         if response.is_redirect and perfom_redirect:
