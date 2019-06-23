@@ -9,7 +9,7 @@ Before any usage please read the *O'Reilly*'s [Terms of Service](https://learnin
   * [Requirements & Setup](#requirements--setup)
   * [Usage](#usage)
   * [Docker Container](#docker-container)
-  
+
 ## Requirements & Setup:
 ```shell
 $ git clone https://github.com/rafapc2/safaribooks.git
@@ -32,11 +32,11 @@ requests>=2.20.0
 The file **cookies.json** is needed for mantain the http session in Safari, if login fail, you must follow the following steps:
 **TODO :(**
 
-  
+
 ## Usage:
 It's really simple to use, just choose a book from the library and replace in the following command:
-  * X-es with its ID, 
-  * `email:password` with your own. 
+  * X-es with its ID,
+  * `email:password` with your own.
 
 ```shell
 $ python3 safaribooks.py --cred "account_mail@mail.com:password01" XXXXXXXXXXXXX
@@ -61,5 +61,6 @@ $ docker build -t mysafaribooks .
 Execute and enjoy :)
 
 ```shell
-$docker run --rm -itv "$(pwd):/data/Books" mysafaribooks --cred "user@xxxmail.com:password" XXXXXXXXXXXXX
+mkdir Books
+docker run --rm -itv "$(pwd)/Books:/data/Books" mysafaribooks --cred "user@xxxmail.com:password" XXXXXXXXXXXXX
 ```
